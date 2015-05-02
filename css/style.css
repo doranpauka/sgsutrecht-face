@@ -635,7 +635,7 @@ ul.agendaitem a{
 }
 
 #maintenance{
-    display:none;
+    display:fixed;
 	text-align:center;
 	width:100%;
 	height:40%;

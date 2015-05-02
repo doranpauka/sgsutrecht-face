@@ -22,7 +22,7 @@
     
     });
 </script>
-<!--dit is de update-->
+<!--updated-->
 <div id="maintenance">
 	<h1>Welkom!</h1>
 	<h2>Momenteel wordt de nieuwe site getest en vind er onderhoud plaats</h2>

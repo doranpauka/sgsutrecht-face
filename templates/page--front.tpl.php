@@ -1,18 +1,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9" />
-<script src="<?php echo path_to_theme(); ?>/js/jquery.fullPage.js"></script>
 <script src="<?php echo path_to_theme(); ?>/js/jquery.googleslides.js"></script>
 <script>
     $(document).ready(function(){
-        $('#frontpage').fullpage({
-        //Navigation
-        menu: false,
-        anchors:['1', '2', '3', '4'],
-        navigation: false,
-        navigationPosition: 'right',
-        scrollBar:true,
-        scrollOverflow: true
-        });
-        
     $(".googleslides").googleslides({
     userid: 'sgsutrecht',
     albumid: '6077777652722809425',
@@ -22,16 +11,13 @@
     
     });
 </script>
-<!--updated-->
 <div id="maintenance">
 	<h1>Welkom!</h1>
 	<h2>Momenteel wordt de nieuwe site getest en vind er onderhoud plaats</h2>
 	<div>Mogelijk ondervind je problemen bij het gebruik van Internet Explorer. Gebruik in dat geval een andere browser, zoals Google Chrome</div>
 	<button id="kijkje">Oke, ik snap het</button>
 </div>
-<div id="frontpage">
-<div class="section" id="firstSection">
-    
+
     
     <div id="facebook"></div>
     <div id="linkedin"></div>
@@ -100,7 +86,6 @@
 <!--end message bar-->
 </div>
 
-<div class="section secondsection">
     <div class="buttonbar top"><?php print render($page['main_menu']); ?></div>
     <div class="secondlogo"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" /></div>
     
@@ -120,5 +105,4 @@
     </div>
 
 
-</div>
 

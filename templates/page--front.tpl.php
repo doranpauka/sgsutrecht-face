@@ -12,12 +12,13 @@
     });
 </script>
 
-<div id="maintenance">
-	<h1>Welkom!</h1>
-	<h2>Momenteel vindt er onderhoud aan deze site plaats</h2>
-	<button id="kijkje">Oke, ik snap het</button>
-</div>
-
+<?php if($_SERVER['REMOTE_ADDR'] != "145.97.234.168"):?>
+    <div id="maintenance">
+	    <h1>Welkom!</h1>
+	    <h2>Momenteel vindt er onderhoud aan deze site plaats</h2>
+	    <button id="kijkje">Oke, ik snap het</button>
+    </div>
+<?php endif; ?>
     
     <div id="facebook"></div>
     <div id="linkedin"></div>

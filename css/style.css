@@ -1,0 +1,679 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+@font-face {
+    font-family: 'museo300';
+    src: url('museo-webfont.eot');
+    src: url('museo-webfont.eot?#iefix') format('embedded-opentype'),
+         url('museo-webfont.woff2') format('woff2'),
+         url('museo-webfont.woff') format('woff'),
+         url('museo-webfont.ttf') format('truetype'),
+         url('museo-webfont.svg#museo300') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    background-color:#FFFFCC;
+    font-size:12px; 
+}
+
+.contentsection{
+    background-image:url('../images/bg/09_20061004_360d_b.jpg');
+    background-size:cover;
+}
+
+.secondsection{
+    background-image:url('../images/bg/09_20061004_360d_b.jpg');
+    background-size:cover;
+}
+
+::-webkit-scrollbar {
+    width: 20px;
+}
+ 
+::-webkit-scrollbar-track {
+    background-color:#e1e1e1;
+}
+ 
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 130px;
+    border-radius: 130px;
+    background-color:black;
+    border-top:15vh solid #e1e1e1;
+    border-bottom:15vh solid #e1e1e1;
+    
+}
+
+.submitted{
+  display: none;
+}
+
+.view-content a{
+  color:black;
+}
+
+.node h2{
+  margin-bottom: 30px;
+}
+
+
+#firstSection{
+    background-image:url('../images/bg/09_20061004_360d_b.jpg');
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+
+.firstlogo{
+    position:absolute;
+    top:100px;
+    left:0px;
+    z-index: 2;
+    width:100px;
+}
+
+.secondlogo{
+    position:absolute;
+    bottom:0;
+    right:0;
+    z-index: 2;
+}
+
+.thirdlogo img{
+    height:12vh;
+    position: absolute;
+    top:10px;
+    left:10%;
+}
+
+.firstlogo img{
+    width:100%;
+}
+
+.secondlogo img{
+    width:200px;
+}
+
+.row{
+    max-width:65%;
+}
+
+.fullWidth {
+   width: 100%;
+   margin-left: auto;
+   margin-right: auto;
+   max-width:100%;
+}
+
+#block-nice-menus-1{
+    float:right;
+}
+
+@media only screen and (max-device-width: 1000px) {
+.fullWidthMobile{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: initial;
+}
+
+.fullWidthMobile p{
+  font-size:30px;
+}
+
+
+
+.introtext{
+  font-size: 30px !important;
+}
+
+}
+
+
+
+.fixBottom{
+	position:absolute;
+	bottom:0;
+}
+
+.sponsoreninspraak{
+  max-height: 70px;
+  overflow: hidden;
+}
+
+.introtext{
+	color:black;
+	padding:20px !important;
+	background-color: rgba(255,255,255,0.5);
+	height:393px !important;
+	font-size: 15px;
+	line-height: 30px;
+}
+
+.node-readmore a{
+  color:#FF0077;
+}
+
+.columns{
+    padding:0;
+}
+
+
+.tagcloud{
+    position: absolute;
+    width:200px;
+    height:100%;
+    left:50%;
+    top:60%;
+    background: url("../images/dot.png");
+    background-repeat:no-repeat space;
+    z-index: 0;
+}
+
+.tagcloud li{
+    background-color:rgba(255,225,225,.9);
+    color:black;
+    padding:10px;
+    border-radius: 7px;
+    margin:1px;
+    list-style:none;
+    position:absolute;
+    font-size:15px;
+    box-shadow: 0px 0px 10px 5px yellow;
+    width:100px;
+    cursor:pointer;
+    text-align:center;
+}
+
+
+.sponsor{
+    z-index:1;
+    display:inline-block;
+    background-image:url("http://rijschoolvlam.nl/wp-content/themes/black-ace/img/Rijschool-Vlam-Utrecht.png");
+    width:170px;
+    height:100px;
+    background-color:black;
+    background-size:130px 40px;
+    background-position:20px 15px;
+    background-repeat:no-repeat;
+    cursor:pointer;
+}
+
+.inspraak{
+    z-index:1;
+    display:inline-block;
+    background-image:url("../images/inspraak.png");
+    background-color:white;
+    width:170px;
+    height:100px;
+    background-size:170px 85px;
+    background-repeat:no-repeat;
+    background-position-y: -10px;
+    cursor:pointer;
+}
+
+.wordlid{
+    background-color:#FF36A3 !important;
+    cursor:pointer;
+}
+
+.wordlid:hover{
+    background-color:gold !important;
+}
+
+.wordlidrow{
+  width: 100%;
+  text-align: center;
+}
+
+.activity{
+    height:300px;
+    overflow:hidden;
+    background-color:rgba(0, 0, 0, .7);
+    box-shadow:0 0 5px white;
+    border:1px solid white;
+    text-align:center;
+}
+
+.activity img{
+    width:100%;
+    position:absolute;
+    right:0;
+}
+
+.activity h1,h2,.description{
+    color:#FCF7E6;
+}
+
+.activity .description{
+    display:block;
+    position:relative;
+    background-color:rgba(0,0,0,.8);
+    box-shadow:0 10 5px black;
+    font-size:15px;
+}
+
+
+#sidenav{
+    width:0px;
+    overflow:hidden;
+}
+
+a.item{
+display:block;
+padding:10px !important;
+}
+
+.item i{
+    color:white;
+    font-size:2em;
+}
+
+.menu-block-1{
+    background-color:rgba(0,0,0,.8);
+}
+
+.menu-block-1 label{
+    color:white;
+}
+
+.top-bar{
+    background-color:rgba(0,0,0,0);
+}
+
+.top-bar-section ul{
+    position:fixed;
+    top:0;
+    right:0;
+}
+
+
+button a{
+    color:black;
+    display: block;
+    height:100%;
+    padding-top:20px;
+}
+
+button a:visited{
+    color:black;
+}
+
+button a:hover{
+    color:white;
+}
+
+#mobile ul li{
+    width:100%;
+}
+
+#logo{
+    padding:30px;
+}
+
+.top-bar .name h1{
+    z-index: -100;
+}
+
+
+
+#sidenav{
+    top:20%;
+}
+
+.center{
+    text-align:center;
+}
+
+.buttonbar li{
+    height:60px;
+    background-color:gold !important;
+    color:black;
+    font-size: 13px;
+    text-align:center;
+    min-width: 120px;
+    border:0 !important;
+}
+
+.buttonbar li a{
+    color:black;
+    display:inline-block;
+    width: 100%;
+    height: 100%;
+    padding:16px !important;
+    border:0;
+}
+
+.buttonbar{
+    background-color:gold;
+}
+
+.buttonbar a:hover{
+    background-color:#ff36a3;
+}
+
+.buttonbar.top{
+    position:absolute;
+    top:0;
+    right:0;
+    background-color:gold;
+}
+
+.buttonbar .content>ul>li.last{
+    padding-right: 50px;
+}
+
+.gogold{
+    background-color: gold !important;
+}
+
+ul.nice-menu-down ul{
+       position:absolute;
+       right:0;
+       margin:0 !important;
+       top:auto !important;
+       border:0 !important;
+}
+
+
+#inspraak{
+    background-image:url("../images/inspraak.png");
+    background-color:gold;
+    background-position:center center;
+    background-size:140px;
+    cursor:pointer;
+}
+
+
+
+.nomargin{
+    margin:0;
+}
+
+
+.imgframe img{
+  width:100%;
+}
+
+.imgframe span{
+    position:absolute;
+    top:50px;
+    z-index: 10;
+    background-color:rgba(255,255,255,.7);
+    padding:20px;
+    font-size:4em;
+    font-family:'museo300';
+}
+
+.imgframe span a{
+    color:black !important;
+    text-shadow: 1px 1px 1px #e1e1e1;
+}
+
+.imgframe small{
+    position:absolute;
+    float:right;
+    bottom:120px;
+    right:0;
+    z-index: 10;
+    background-color:rgba(255,255,255,.7);
+    padding:20px;
+    font-size:3em;
+}
+
+.sitetitle{
+    width:90%;
+    text-align:center;
+    background-color:rgba(255,255,255,.2);
+    box-shadow: 0 0 200px white;
+    margin-bottom:50px;
+    padding-left:100px;
+}
+
+.sitetitle h1{
+    color:#FCF7E6;
+    font-size:4em;   
+    font-family: 'museo300';
+    text-shadow:0px 0px 10px black;
+}
+
+.sitetitle span{
+    font-style:italic;
+    color:#EEF0F9;
+    font-size:14px;
+}
+
+.firstright{
+	float:right !important;
+	background-color: white;
+}
+
+.front-columns .views-row{
+    background-color: rgba(0,0,0,.8);
+    margin-bottom:10px;
+    margin-top:100px;
+    margin-left:10px;
+    margin-right:10px;
+}
+
+.front-columns .views-row p{
+    font-size:1em;
+    padding:10px;
+    color:white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.front-columns .views-row h2 a{
+    display:block;
+    width:100%;
+    padding:10px;
+    color:white;
+    font-family:'museo300';
+    font-size:.7em;
+}
+
+
+.node-teaser * img{
+    display:inline-block;
+    padding:10px;
+}
+
+.field-name-field-afbeelding{
+  display:inline-block;
+    float:left;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+.field-name-field-foto{
+    display:inline-block;
+    float:left;
+}
+
+.field-name-body{
+}
+.meta_submitted{
+    display:none !important;
+}
+
+.weekvanpage{
+    background-color:rgba(0,0,0,.9);
+    color:white;
+    padding:20px;
+}
+
+.generalpagecontent{
+    background-color:rgba(0,0,0,.9);
+    color:white;
+    padding:20px;
+}
+
+.generalpagecontent h1{
+    font-family:"museo300";
+    color:white;
+    padding:10px;
+}
+
+.generalpagecontent .content{
+    padding-left:30px;
+}
+
+.album_title a{
+    font-family: "museo300";
+    font-size:1.3em;
+}
+
+.album_outer{
+  text-align: center;
+}
+
+.album_thumbnail{
+    padding:30px;
+    background-color: #3B3B3B;
+    border-radius: 20px;
+}
+
+
+
+.weekvanpage h1{
+    font-family:"museo300";
+    color:white;
+    padding:10px;
+}
+
+.weekvanpage p{
+    padding:10px;
+}
+
+.weekvanpage .node-week img{
+    float:left;
+    padding:10px;
+}
+
+.homeinfo_white{
+    background-color:white;
+    padding:30px;
+}
+
+.homeinfo_ed{
+    height: 490px;
+    background-image: url("../images/ed.JPG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -50px;
+}
+
+#contentview{
+    overflow-y:hidden;
+    height:60vh;
+    width:100%;
+    background-image: url("../images/ed.png");
+    background-repeat:no-repeat;
+    background-position:bottom right;
+    background-size:auto 100px;
+    background-color:#e1e1e1;
+    padding-right:120px;
+    padding-left:10px;
+    padding-top:30px;
+    padding-bottom:30px;
+}
+
+
+#leesverdercol{
+    text-align:center;
+}
+
+#leesterug, #leesverder{
+    height:12vh;
+    padding:10px;
+    color:white;
+}
+
+#facebook{
+    background-image: url("../images/facebook.png");
+    width:70px;
+    height:70px;
+    background-size:70px 70px;
+    background-repeat:no-repeat;
+    background-position:center;
+    cursor:pointer;
+    position: absolute;
+	  top:0;
+	  right:0;
+}
+
+#linkedin{
+    background-image: url("../images/linkedin.png");
+    width:70px;
+    height:70px;
+    background-size:70px 70px;
+    background-repeat:no-repeat;
+    background-position:center;
+    cursor:pointer;
+    position: absolute;
+	  right: 90px;
+	  top: 0px;
+	  z-index:2;
+}
+
+#laatstefotos{
+background-color:rgba(255,255,255,.8);
+width:100%;
+cursor: pointer;
+border: 5px solid white;
+height:300px !important;
+}
+
+ul.agendaitem{
+    list-style: none;
+    color: white;
+}
+
+ul.agendaitem a{
+    color: white;
+    display:block;
+    padding-bottom:10px;
+}
+
+#maintenance{
+    display:none;
+	text-align:center;
+	width:100%;
+	height:40%;
+	position:fixed;
+	bottom:0;
+	left:0;
+	color:white;
+	background-color:rgba(0,0,0,.80);
+	z-index:9999;
+}
+
+#maintenance h1{
+	color:yellow;
+}
+
+.border{
+	border:5px solid red;
+}
+
+.view-de-week-van-page{
+  padding-left:10%;
+}
+
+.view-de-week-van-page h2{
+  color:black;
+}
+
+.view-de-week-van-page h2 a{
+  color:black;
+}
+
+.fixHeight{
+  height: 300px;
+  overflow: hidden;
+  margin-top:100px;
+}
+
+.field-name-field-foto{
+    padding-right:10px;
+    padding-bottom:10px;
+}

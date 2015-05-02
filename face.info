@@ -1,0 +1,33 @@
+name = TempSGS
+description = TempSGS
+core = 7.x
+
+regions[header] = Header
+regions[front-links]    = Front Links
+regions[front-midden]    = Front Midden
+regions[front-rechts]    = Front Rechts
+regions[content] = Main content
+regions[sidemenu] = Side menu
+regions[hotitem] = Hot Item
+regions[user_menu] = User Menu
+regions[main_menu] = Main Menu
+
+stylesheets[all][] = foundation/css/normalize.css
+stylesheets[all][] = foundation/css/foundation.css
+stylesheets[print][] = css/print.css
+stylesheets[all][] = css/style.css
+stylesheets[all][] = slick/slick.css
+stylesheets[all][] = css/jquery.googleslides.css
+
+
+scripts[] = js/jquery.googleslides.js
+scripts[] = foundation/js/vendor/jquery.js
+scripts[] = foundation/js/foundation.min.js
+scripts[] = foundation/js/vendor/modernizr.js
+scripts[] = js/my.js
+scripts[] = js/jquery.googleslides.js
+scripts[] = slick/slick.min.js
+
+
+features[] = name
+features[] = logo

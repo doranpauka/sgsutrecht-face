@@ -1,0 +1,18 @@
+<!HTML>
+<html>
+    <head>
+        
+        <!--Foundation-->
+        <?php
+        foreach($css as $key=>$value){
+            print_r($value);
+        }
+            //print_r($css);
+      ?>
+        
+        
+    </head>
+    <body>
+        <a class="small button" href="#">Welkom html</a>
+    </body>
+</html>

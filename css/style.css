@@ -15,16 +15,9 @@
 body{
     background-color:#FFFFCC;
     font-size:12px; 
-}
-
-.contentsection{
     background-image:url('../images/bg/09_20061004_360d_b.jpg');
     background-size:cover;
-}
-
-.secondsection{
-    background-image:url('../images/bg/09_20061004_360d_b.jpg');
-    background-size:cover;
+    background-attachment: fixed;
 }
 
 ::-webkit-scrollbar {
@@ -39,8 +32,8 @@ body{
     -webkit-border-radius: 130px;
     border-radius: 130px;
     background-color:black;
-    border-top:15vh solid #e1e1e1;
-    border-bottom:15vh solid #e1e1e1;
+    border-top:1vh solid #e1e1e1;
+    border-bottom:1vh solid #e1e1e1;
     
 }
 
@@ -63,16 +56,13 @@ body{
     background-repeat:no-repeat;
 }
 
-.firstlogo{
-    position:absolute;
-    top:100px;
-    left:0px;
+.sitetitle img{
     z-index: 2;
-    width:100px;
+    width:200px;
 }
 
 .secondlogo{
-    position:absolute;
+    position:fixed;
     bottom:0;
     right:0;
     z-index: 2;
@@ -104,6 +94,16 @@ body{
    max-width:100%;
 }
 
+
+.fixHeight{
+    margin-top:10px;
+}
+
+.fixHeight>div{
+height: 300px;
+}
+
+
 #block-nice-menus-1{
     float:right;
 }
@@ -128,13 +128,6 @@ body{
 
 }
 
-
-
-.fixBottom{
-	position:absolute;
-	bottom:0;
-}
-
 .sponsoreninspraak{
   max-height: 70px;
   overflow: hidden;
@@ -144,9 +137,12 @@ body{
 	color:black;
 	padding:20px !important;
 	background-color: rgba(255,255,255,0.5);
-	height:393px !important;
 	font-size: 15px;
 	line-height: 30px;
+}
+
+.hotitem{
+    margin-bottom:100px;
 }
 
 .node-readmore a{
@@ -157,32 +153,6 @@ body{
     padding:0;
 }
 
-
-.tagcloud{
-    position: absolute;
-    width:200px;
-    height:100%;
-    left:50%;
-    top:60%;
-    background: url("../images/dot.png");
-    background-repeat:no-repeat space;
-    z-index: 0;
-}
-
-.tagcloud li{
-    background-color:rgba(255,225,225,.9);
-    color:black;
-    padding:10px;
-    border-radius: 7px;
-    margin:1px;
-    list-style:none;
-    position:absolute;
-    font-size:15px;
-    box-shadow: 0px 0px 10px 5px yellow;
-    width:100px;
-    cursor:pointer;
-    text-align:center;
-}
 
 
 .sponsor{
@@ -280,12 +250,6 @@ padding:10px !important;
     background-color:rgba(0,0,0,0);
 }
 
-.top-bar-section ul{
-    position:fixed;
-    top:0;
-    right:0;
-}
-
 
 button a{
     color:black;
@@ -323,6 +287,10 @@ button a:hover{
 .center{
     text-align:center;
 }
+.buttonbar{
+    background-color:gold;
+    margin-right: 25%;
+}
 
 .buttonbar li{
     height:60px;
@@ -343,19 +311,16 @@ button a:hover{
     border:0;
 }
 
-.buttonbar{
-    background-color:gold;
-}
-
 .buttonbar a:hover{
     background-color:#ff36a3;
 }
 
 .buttonbar.top{
-    position:absolute;
+    position:fixed;
     top:0;
     right:0;
     background-color:gold;
+    z-index: 9999;
 }
 
 .buttonbar .content>ul>li.last{
@@ -421,11 +386,11 @@ ul.nice-menu-down ul{
 }
 
 .sitetitle{
-    width:90%;
+    width:100%;
     text-align:center;
-    background-color:rgba(255,255,255,.2);
+    background-color:rgba(0,0,0,.3);
     box-shadow: 0 0 200px white;
-    margin-bottom:50px;
+    margin-bottom:10px;
     padding-left:100px;
 }
 
@@ -450,7 +415,6 @@ ul.nice-menu-down ul{
 .front-columns .views-row{
     background-color: rgba(0,0,0,.8);
     margin-bottom:10px;
-    margin-top:100px;
     margin-left:10px;
     margin-right:10px;
 }
@@ -599,6 +563,7 @@ ul.nice-menu-down ul{
     position: absolute;
 	  top:0;
 	  right:0;
+    z-index: 2;
 }
 
 #linkedin{
@@ -635,16 +600,16 @@ ul.agendaitem a{
 }
 
 #maintenance{
-    display:fixed;
+    display: none;
+    position:fixed;
 	text-align:center;
 	width:100%;
-	height:40%;
-	position:fixed;
+	height:100%;
 	bottom:0;
 	left:0;
 	color:white;
 	background-color:rgba(0,0,0,.80);
-	z-index:9999;
+	z-index:999999;
 }
 
 #maintenance h1{
@@ -667,11 +632,7 @@ ul.agendaitem a{
   color:black;
 }
 
-.fixHeight{
-  height: 300px;
-  overflow: hidden;
-  margin-top:100px;
-}
+
 
 .field-name-field-foto{
     padding-right:10px;

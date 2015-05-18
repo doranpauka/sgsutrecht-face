@@ -20,7 +20,6 @@
 
 function face_preprocess_html(&$variables) {
   drupal_add_css('//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css', array('type' => 'external'));
-  drupal_add_css('sites/all/themes/face/css/jquery.fullPage.css', array('type' => 'external'));
 }
 
 function face_preprocess_page(&$variables) {

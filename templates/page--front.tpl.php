@@ -1,46 +1,61 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9" />
 <script src="<?php echo path_to_theme(); ?>/js/jquery.googleslides.js"></script>
 <script>
+    var menuoffset = 0;
     $(document).ready(function(){
+
+    menuoffset = $(".buttonbar").offset();
     $(".googleslides").googleslides({
     userid: 'sgsutrecht',
     albumid: '6077777652722809425',
     imgmax:375,
     random:true
     });
+
+
     
+    });
+
+    $(window).scroll(function(){
+        var w = $(window);
+        if (w.scrollTop() >= menuoffset.top) {
+            $('.buttonbar').addClass('top');
+        } else {
+            $('.buttonbar').removeClass('top');
+        }
     });
 </script>
 
-<?php if($_SERVER['REMOTE_ADDR'] != "145.97.234.168"):?>
+<?php if($_SERVER['REMOTE_ADDR'] != "145.97.250.165"):?>
     <div id="maintenance">
-	    <h1>Welkom!</h1>
+	    <h1>Sorry</h1>
 	    <h2>Momenteel vindt er onderhoud aan deze site plaats</h2>
-	    <button id="kijkje">Oke, ik snap het</button>
+        <h2>We zijn zo terug</h2>
     </div>
 <?php endif; ?>
     
     <div id="facebook"></div>
     <div id="linkedin"></div>
-    
-    <?php if ($logo): ?>
-            <div class="firstlogo"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" /></div>
-    <?php endif; ?>
-    
+
+
     
     <div class="row fullWidth">
     	<div class="large-12 columns">
 		    <div class="sitetitle">
+                <?php if ($logo): ?>
+                    <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
+                <?php endif; ?>
         		<h1>Studentengroep Sociale Wetenschappen</h1>
         		<span>Bankhangen-Inspraak-Muziek-Stamkroeg-Kunst-Reizen-Internationaal-Cultuur-Leren-Bestuursjaar-Vrienden-Ed</span>
     		</div>		
     	</div>
-            <div class="buttonbar eerste gogold">
-                <?php print render($page['main_menu']); ?>
-            </div>
     </div>
-    
-    <div class="row fullWidth fixHeight">
+
+    <div class="row fullWidth">
+        <div class="buttonbar"><?php print render($page['main_menu']); ?></div>
+    </div>
+
+    <div class="row fullWidth fixHeight hotitem">
     	<div class="large-4 columns">
     		<div class="activity">
         		<?php print render($page['hotitem']); ?>
@@ -55,10 +70,11 @@
     		<div id="laatstefotos" class="googleslides">
     		</div>
     	</div>
+
     </div>
     
     
-    <div class="row fullWidth fixBottom">
+    <div class="row fullWidth">
     	<div class="large-4 small-12 sponsoreninspraak columns">
     		    <div class="sponsor"></div>
     			<div class="inspraak"></div>
@@ -87,7 +103,7 @@
 <!--end message bar-->
 </div>
 
-    <div class="buttonbar top"><?php print render($page['main_menu']); ?></div>
+
     <div class="secondlogo"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" /></div>
     
     

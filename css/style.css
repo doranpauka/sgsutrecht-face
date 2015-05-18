@@ -528,7 +528,6 @@ ul.nice-menu-down ul{
 
 #contentview{
     overflow-y:hidden;
-    height:60vh;
     width:100%;
     background-image: url("../images/ed.png");
     background-repeat:no-repeat;
@@ -539,6 +538,7 @@ ul.nice-menu-down ul{
     padding-left:10px;
     padding-top:30px;
     padding-bottom:30px;
+    margin-top:30px;
 }
 
 

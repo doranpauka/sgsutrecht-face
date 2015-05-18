@@ -1,4 +1,5 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9" />
+<!--are we life?-->
 <script src="<?php echo path_to_theme(); ?>/js/jquery.fullPage.js"></script>
 <script src="<?php echo path_to_theme(); ?>/js/jquery.googleslides.js"></script>
 <script>
